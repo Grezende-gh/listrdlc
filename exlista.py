@@ -1,6 +1,4 @@
 # Exercício - Lista de tarefas com desfazer e refazer
-# Música para codar =)
-# Everybody wants to rule the world - Tears for fears
 # todo = [] -> lista de tarefas
 # todo = ['fazer café'] -> Adicionar fazer café
 # todo = ['fazer café', 'caminhar'] -> Adicionar caminhar
@@ -9,7 +7,6 @@
 # refazer = todo ['fazer café']
 # refazer = todo ['fazer café', 'caminhar']
 import os
-
 
 def listar(tarefas):
     print()
@@ -79,6 +76,7 @@ while True:
         comandos['adicionar']
     comando()
 
+    # Essa parte abaixo foi otimizada aqui acima, serve para entender como não ficar dependente do if, ja que ele pode alongar e prejudicar o código.
     # if tarefa == 'listar':
     #     listar(tarefas)
     #     continue
